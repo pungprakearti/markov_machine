@@ -14,6 +14,7 @@ if (process.argv.length === 4) {
         console.error(err.message);
       } else {
         mm = new MM.MarkovMachine(data);
+        console.log(mm.makeText());
         return data;
       }
     });
